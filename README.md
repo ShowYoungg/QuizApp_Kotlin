@@ -1,7 +1,7 @@
 # QuizApp in Kotlin
 This is a Quiz app developed as one of the requirements of Google Africa Challenge Scholarship Challenge with Udacity in Android Basics track but in Kotlin instead of Java
 
-## Programming Language
+## Programming Languages Used
 Kotlin, XML and Groovy for Gradle
 
 ## Screenshots
