@@ -8,7 +8,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.question.*
 
 /**
- * Created by SHOW on 5/20/2018.
+ * Created by Soyombo Soyinka on 5/20/2018.
  */
 
 class QuizActivity : AppCompatActivity() {
@@ -19,10 +19,7 @@ class QuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.question)
 
-        /**
-         * Username from MainActivity is thrown down here, so that it can be displayed in this activity class.
-         * @param: username from MainActivity
-         */
+        //Intent sent from MainActivity.kt is captured here, this is the username, for display.
         welcome.text = intent.getStringExtra("EdiTtEXTvALUE")
     }
 
@@ -64,13 +61,12 @@ class QuizActivity : AppCompatActivity() {
             "Particle A" -> 1
             else -> 0
         }
-        /**
-         * toast messages to display on submission and the navigation intent to restart the quiz
-         */
-
+        
+        //Toast messages to display on submission and the navigation intent to restart the quiz
         Toast.makeText(this, "Thanks for taking this quiz", Toast.LENGTH_SHORT).show()
         Toast.makeText(this, "You scored $score out of 6", Toast.LENGTH_LONG).show()
         score = 0
+        
         //Restart quiz by going back to the home page
         startActivity(Intent(this@QuizActivity, MainActivity::class.java))
         finish()
