@@ -64,6 +64,7 @@ class QuizActivity : AppCompatActivity() {
         
         //Toast messages to display on submission and the navigation intent to restart the quiz
         Toast.makeText(this, "Thanks for taking this quiz", Toast.LENGTH_SHORT).show()
+        //sleep(500)
         Toast.makeText(this, "You scored $score out of 6", Toast.LENGTH_LONG).show()
         score = 0
         
